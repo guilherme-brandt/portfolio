@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-26 17:02-0300\n"
+"POT-Creation-Date: 2024-10-03 16:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,9 @@ msgstr "Olá, eu sou Guilherme Brandt"
 msgid ""
 "Fullstack Developer, focused on modern, responsive websites that adapt to "
 "any need"
-msgstr "Desenvolvedor Fullstack, focado em websites modernos e responsivos que se adaptam a qualquer necessidade"
+msgstr ""
+"Desenvolvedor Fullstack, focado em websites modernos e responsivos que se "
+"adaptam a qualquer necessidade"
 
 #: .\website\templates\home.html:69
 msgid "Check out my app in production"
@@ -191,6 +193,40 @@ msgstr "Enviar"
 #: .\website\templates\home.html:198
 msgid "developed by"
 msgstr "desenvolvido por"
+
+#: .\website\templates\home.html:218
+#, fuzzy
+#| msgid "Test it now!"
+msgid "Test now!"
+msgstr "Teste agora!"
+
+#: .\website\templates\home.html:219
+msgid "Here are some features you can explore:"
+msgstr "Aqui estão algumas funcionalidades que você pode explorar:"
+
+#: .\website\templates\home.html:220
+msgid "Switch between light and dark themes using the switcher."
+msgstr "Mude entre os temas claro e escuro utilizando o switcher."
+
+#: .\website\templates\home.html:221
+msgid "Resize the screen or test on your phone to see responsiveness."
+msgstr "Diminua a tela ou teste no seu celular para ver a responsividade."
+
+#: .\website\templates\home.html:222
+msgid "Check out the accessibility and adaptability of the layouts."
+msgstr "Confira a acessibilidade e adaptabilidade dos layouts."
+
+#: .\website\templates\home.html:223
+msgid "Have fun!"
+msgstr "Divirta-se!"
+
+#: .\website\templates\home.html:270
+msgid "Form submitted successfully!"
+msgstr "Formulário enviado com sucesso!"
+
+#: .\website\templates\home.html:274
+msgid "An error occurred while submitting the form. Please try again."
+msgstr "Ocorreu um erro enquanto o formulário estava sendo enviado. Por favor, tente novamente."
 
 #~ msgid "About Me"
 #~ msgstr "Sobre Mim"

@@ -109,7 +109,7 @@ import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://admin:XI5FMAcYwVEA4siWP2AtZ4uwwYXO6pnr@dpg-crurhk56l47c73ajn91g-a/portfolio_db_lssz',
         conn_max_age=600
     )
 }

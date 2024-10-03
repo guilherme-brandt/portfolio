@@ -1,0 +1,58 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+}
+
+/* Navbar Styles */
+.navbar, header {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.navbar-toggler {
+    color: #000;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.habilidade-icon {
+    color: #333;
+}
+
+.rounded-card:hover .habilidade-icon {
+    color: #3498db; /* Cor dos ícones ao passar o mouse */
+}
+
+.go-live-btn {
+    background-color: #3498db;
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.rounded-card {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#sobre {
+    background-color: #f8f9fa;
+}
+
+a {
+    color: #3498db;
+}

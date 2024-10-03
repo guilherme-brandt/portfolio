@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 56px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    padding: 0.25rem 1rem;
+}
+
+.navbar-toggler i {
+    font-size: 1.5rem;
+}
+
+.dropdown-menu{
+    text-align: center;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.dropdown-item{
+    margin-top: 0.5rem;
+}
+
+.custom-switch {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#theme-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Carousel styles */
+#myCarousel {
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.carousel-item.active .go-live-btn {
+    position: relative; /* necessário para que o z-index funcione */
+    z-index: 10; /* deve ser maior que outros elementos que possam sobrepor */
+}
+.carousel-item:not(.active) {
+    opacity: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.habilidade-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Button Styles */
+.go-live-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rounded-card {
+    margin: 1rem;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.rounded-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#sobre{
+    margin: 0 auto;
+}
+#contato {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre p, #contato p {
+    font-size: 1.1rem;
+}
+
+a {
+    color: #3498db;
+}
+
+.whats-logo {
+    width: 1.7rem;
+}
+
+.linkedn-logo {
+    width: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #myCarousel {
+        height: 45vh;
+    }
+    .hero-content {
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

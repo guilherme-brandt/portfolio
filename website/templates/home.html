@@ -1,0 +1,281 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Guilherme Brandt's Portfolio" %}</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'favicon\favicon.ico' %}" type="image/x-icon">    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Referência ao estilo comum -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <!-- Tema escuro como padrão -->
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/dark.css' %}">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand yellow" href="#"><i class="fas fa-terminal"></i> GuiBrandt.dev</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
+                    <i class="fas fa-bars"></i>                  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#sobre">{% trans "About" %}</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#habilidades">{% trans "Skills" %}</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#projetos">{% trans "Projects" %}</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#contato">{% trans "Contact" %}</a></li>
+                    </ul>
+
+                    <!-- Switcher in the right -->
+                    <div class="d-flex align-items-center">
+                        <div class="nav-item dropdown navbar-nav mr-3">
+                            <a class="nav-link dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              {% trans "Languages" %}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item nav-link" href="/pt-br/">{% trans "Portuguese" %}</a>
+                              <a class="dropdown-item nav-link" href="/en/">{% trans "English" %}</a>
+                            </div>
+                        </div>
+                        <!-- Switcher -->
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="theme-switcher">
+                            <label class="custom-control-label" for="theme-switcher">
+                                <i id="theme-icon" class="theme-icon"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="sobre" class="py-8 rounded-card">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="display-5">{% trans "Hello, I am Guilherme Brandt" %}</h2>
+                            <p class="lead">{% trans "Fullstack Developer, focused on modern, responsive websites that adapt to any need" %}</p>
+                            <p class="lead">{% trans "Check out my app in production" %}</p>
+                            <a href="https://guibrandt.pythonanywhere.com/" target="_blank" class="btn btn-primary go-live-btn">
+                                <i class="fas fa-broadcast-tower"></i> {% trans "CRM App" %}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center">
+                            <h1 class="display-5">{% trans "Check out my project!" %}</h1>
+                            <p class="lead">{% trans "Secure customer registration with user authentication" %}</p>
+                            <a href="https://guibrandt.pythonanywhere.com/" target="_blank" class="btn btn-primary go-live-btn">
+                               {% trans "CRM App" %}
+                            </a>
+                            <p class="lead">{% trans "More projects coming soon!" %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center">
+                            <h1 class="display-5">{% trans "Modern websites" %}</h1>
+                            <p class="lead">{% trans "Accessible in multiple languages and screen sizes." %}</p>
+                            <p class="lead">{% trans "Interfaces adaptable to devices of various sizes." %}</p>
+                            <a href="#" class="lead yellow" id="test-now-btn">{% trans "Test it now!" %}</a> <!-- Link Modificado -->
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+            
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">{% trans "Previous" %}</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">{% trans "Next" %}</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="habilidades" class="py-5">
+            <h2 class="text-center">{% trans "Skills" %}</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="rounded-card">
+                        <h4>{% trans "Frontend" %}</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-html5 habilidade-icon"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt habilidade-icon"></i> CSS</li>
+                            <li><i class="fab fa-js habilidade-icon"></i> JavaScript</li>
+                            <li><i class="fab fa-bootstrap habilidade-icon"></i> Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-card">
+                        <h4>{% trans "Backend" %}</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-python habilidade-icon"></i> Django</li>
+                            <li><i class="fab fa-node-js habilidade-icon"></i> Node.js</li>
+                            <li><i class="fab fa-python habilidade-icon"></i> Python</li>
+                            <li><i class="fas fa-database habilidade-icon"></i> MySQL</li>
+                            <li><i class="fas fa-code habilidade-icon"></i> API REST</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-card">
+                        <h4>{% trans "Other Skills" %}</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-git-alt habilidade-icon"></i> Git/GitHub</li>
+                            <li><i class="fab fa-aws habilidade-icon"></i> AWS</li>
+                            <li><i class="fab fa-docker habilidade-icon"></i> Docker</li>
+                            <li><i class="fas fa-tools habilidade-icon"></i> CI/CD</li>
+                            <li><i class="fas fa-project-diagram habilidade-icon"></i> {% trans "Project management" %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos" class="py-5">
+            <h2 class="text-center">{% trans "My Projects" %}</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 rounded-card">
+                        <div class="card-body">
+                            <h3 class="card-title">CRM App</h3>
+                            <p class="card-text">{% trans "A complete CRM system with registration, validation, and automation features." %}</p>
+                            <a href="https://guibrandt.pythonanywhere.com/" target="_blank" class="btn btn-primary go-live-btn"><i class="fas fa-broadcast-tower"></i> {% trans "Go Live" %}</a>
+                            <a href="https://github.com/guilherme-brandt/crmapp" target="_blank" class="btn btn-outline-dark source-code-btn">{% trans "Source Code" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="py-5 text-center rounded-card">
+            <h2>{% trans "Contact" %}</h2>
+            <p>{% trans "Send me a message via +5517991612378." %}
+                <a href="https://wa.me/5517991612378" target="_blank">
+                    <img class="whats-logo" src="{% static 'img/whatsapp.png' %}">
+                </a></p>
+            <form method="POST" id="contactForm" action="{% url 'contact' %}">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name" class="float-left">{% trans "Name" %}</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="{% trans 'Your Name' %}" required>
+                        <div class="invalid-feedback">{% trans "Please enter your name." %}</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email" class="float-left">{% trans "Email" %}</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="{% trans 'Your Email' %}" required>
+                        <div class="invalid-feedback">{% trans "Please enter a valid email." %}</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="float-left">{% trans "Message" %}</label>
+                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="{% trans 'Your Message' %}" required></textarea>
+                    <div class="invalid-feedback">{% trans "Please enter your message." %}</div>
+                </div>
+                <button type="submit" class="btn btn-primary go-live-btn">{% trans "Send" %}</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 {% trans "developed by" %} Guilherme Brandt</p>
+        <div class="container-logos">
+            <a href="https://www.linkedin.com/in/guilherme-brandt-488a39190/" target="_blank">
+                <img class="linkedn-logo" src="{% static 'img/linkedn.png' %}">
+            </a>
+            <a href="https://wa.me/5517991612378" target="_blank">
+                <img class="whats-logo" src="{% static 'img/whatsapp.png' %}">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tema Toggle Script -->
+    <script>
+        document.getElementById('test-now-btn').addEventListener('click', function(e) {
+            e.preventDefault(); // Evitar o comportamento padrão do link
+            alert("🚀 Teste agora! \n\n" +
+                  "Aqui estão algumas funcionalidades que você pode explorar:\n" +
+                  "- Mude entre os temas claro e escuro utilizando o switcher.\n" +
+                  "- Diminua a tela ou teste no seu celular para ver a responsividade.\n" +
+                  "- Confira a acessibilidade e adaptabilidade dos layouts.\n\n" +
+                  "Divirta-se!");
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const switcher = document.getElementById('theme-switcher');
+            const themeIcon = document.getElementById('theme-icon');
+            const themeStyle = document.getElementById('theme-style');
+            const savedTheme = localStorage.getItem('theme');
+    
+            // Define o tema padrão como 'dark' se não houver tema salvo no localStorage
+            const currentTheme = savedTheme || 'dark';
+    
+            // Carrega o tema atual (escuro como padrão)
+            setTheme(currentTheme);
+    
+            // Ajusta o estado do switch de acordo com o tema atual
+            switcher.checked = currentTheme === 'dark';
+    
+            // Listener para o switch de troca de temas
+            switcher.addEventListener('change', () => {
+                const theme = switcher.checked ? 'dark' : 'light';
+                setTheme(theme);
+            });
+    
+            // Função para alterar o tema
+            function setTheme(theme) {
+                if (theme === 'dark') {
+                    themeStyle.href = "{% static 'css/dark.css' %}";
+                    themeIcon.className = 'fas fa-moon'; // Ícone de lua para o tema escuro
+                } else {
+                    themeStyle.href = "{% static 'css/light.css' %}";
+                    themeIcon.className = 'fas fa-sun'; // Ícone de sol para o tema claro
+                }
+                localStorage.setItem('theme', theme); // Salva o tema no localStorage
+            }
+        });
+
+        if (isValid) {
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                }
+            }).then(response => response.text())
+              .then(data => {
+                  feedback.textContent = 'Form submitted successfully!';
+                  feedback.style.color = '#28a745'; // Green color for success
+                  form.reset(); // Reset the form fields
+              }).catch(error => {
+                  feedback.textContent = 'An error occurred while submitting the form. Please try again.';
+                  feedback.style.color = '#dc3545'; // Red color for error
+              });
+        
+            // Prevent the default form submission
+            event.preventDefault();
+        }
+    </script>

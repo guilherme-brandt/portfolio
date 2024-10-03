@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-26 17:02-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\website\templates\home.html:7
+msgid "Guilherme Brandt's Portfolio"
+msgstr "Portfólio de Guilherme Brandt"
+
+#: .\website\templates\home.html:25
+msgid "Toggle navigation"
+msgstr "Alternar navegação"
+
+#: .\website\templates\home.html:30
+msgid "About"
+msgstr "Sobre"
+
+#: .\website\templates\home.html:31 .\website\templates\home.html:109
+msgid "Skills"
+msgstr "Habilidades"
+
+#: .\website\templates\home.html:32
+msgid "Projects"
+msgstr "Projetos"
+
+#: .\website\templates\home.html:33 .\website\templates\home.html:168
+msgid "Contact"
+msgstr "Contato"
+
+#: .\website\templates\home.html:40
+msgid "Languages"
+msgstr "Idiomas"
+
+#: .\website\templates\home.html:43
+msgid "Portuguese"
+msgstr "Português"
+
+#: .\website\templates\home.html:44
+msgid "English"
+msgstr "Inglês"
+
+#: .\website\templates\home.html:67
+msgid "Hello, I am Guilherme Brandt"
+msgstr "Olá, eu sou Guilherme Brandt"
+
+#: .\website\templates\home.html:68
+msgid ""
+"Fullstack Developer, focused on modern, responsive websites that adapt to "
+"any need"
+msgstr "Desenvolvedor Fullstack, focado em websites modernos e responsivos que se adaptam a qualquer necessidade"
+
+#: .\website\templates\home.html:69
+msgid "Check out my app in production"
+msgstr "Confira meu aplicativo em produção"
+
+#: .\website\templates\home.html:71 .\website\templates\home.html:80
+msgid "CRM App"
+msgstr "CRM App"
+
+#: .\website\templates\home.html:77
+msgid "Check out my project!"
+msgstr "Confira meu projeto!"
+
+#: .\website\templates\home.html:78
+msgid "Secure customer registration with user authentication"
+msgstr "Cadastro seguro de clientes com autenticação de usuário"
+
+#: .\website\templates\home.html:82
+msgid "More projects coming soon!"
+msgstr "Mais projetos em breve!"
+
+#: .\website\templates\home.html:87
+msgid "Modern websites"
+msgstr "Websites modernos"
+
+#: .\website\templates\home.html:88
+msgid "Accessible in multiple languages and screen sizes."
+msgstr "Acessível em vários idiomas e tamanhos de tela."
+
+#: .\website\templates\home.html:89
+msgid "Interfaces adaptable to devices of various sizes."
+msgstr "Interfaces adaptáveis a dispositivos de diversos tamanhos."
+
+#: .\website\templates\home.html:90
+msgid "Test it now!"
+msgstr "Teste agora!"
+
+#: .\website\templates\home.html:98
+msgid "Previous"
+msgstr "Anterior"
+
+#: .\website\templates\home.html:102
+msgid "Next"
+msgstr "Próximo"
+
+#: .\website\templates\home.html:113
+msgid "Frontend"
+msgstr "Frontend"
+
+#: .\website\templates\home.html:124
+msgid "Backend"
+msgstr "Backend"
+
+#: .\website\templates\home.html:136
+msgid "Other Skills"
+msgstr "Outras Habilidades"
+
+#: .\website\templates\home.html:142
+msgid "Project management"
+msgstr "Gestão de projetos"
+
+#: .\website\templates\home.html:151
+msgid "My Projects"
+msgstr "Meus Projetos"
+
+#: .\website\templates\home.html:157
+msgid ""
+"A complete CRM system with registration, validation, and automation features."
+msgstr ""
+"Um sistema completo de CRM com recursos de registro, validação e automação."
+
+#: .\website\templates\home.html:158
+msgid "Go Live"
+msgstr "Ao vivo"
+
+#: .\website\templates\home.html:159
+msgid "Source Code"
+msgstr "Código Fonte"
+
+#: .\website\templates\home.html:169
+#, fuzzy
+#| msgid "Send me a message via "
+msgid "Send me a message via +5517991612378."
+msgstr "Envie-me uma mensagem via "
+
+#: .\website\templates\home.html:177
+msgid "Name"
+msgstr "Nome"
+
+#: .\website\templates\home.html:178
+msgid "Your Name"
+msgstr "Seu Nome"
+
+#: .\website\templates\home.html:179
+msgid "Please enter your name."
+msgstr "Por favor, insira seu nome."
+
+#: .\website\templates\home.html:182
+msgid "Email"
+msgstr "Email"
+
+#: .\website\templates\home.html:183
+msgid "Your Email"
+msgstr "Seu Email"
+
+#: .\website\templates\home.html:184
+msgid "Please enter a valid email."
+msgstr "Por favor, insira um email válido."
+
+#: .\website\templates\home.html:188
+msgid "Message"
+msgstr "Mensagem"
+
+#: .\website\templates\home.html:189
+msgid "Your Message"
+msgstr "Sua Mensagem"
+
+#: .\website\templates\home.html:190
+msgid "Please enter your message."
+msgstr "Por favor, insira sua mensagem."
+
+#: .\website\templates\home.html:192
+msgid "Send"
+msgstr "Enviar"
+
+#: .\website\templates\home.html:198
+msgid "developed by"
+msgstr "desenvolvido por"
+
+#~ msgid "About Me"
+#~ msgstr "Sobre Mim"
+
+#~ msgid "Fullstack, frontend, and backend developer. Check out my "
+#~ msgstr "Desenvolvedor fullstack, frontend e backend. Confira meu "
+
+#~ msgid "in production!"
+#~ msgstr "em produção!"

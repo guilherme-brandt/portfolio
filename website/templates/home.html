@@ -213,15 +213,15 @@
 
     <!-- Tema Toggle Script -->
     <script>
-        document.getElementById('test-now-btn').addEventListener('click', function(e) { 
-                e.preventDefault(); // Evitar o comportamento padrão do link
-                alert("🚀 {% trans 'Test now!' %} \n\n" +
+        document.getElementById('test-now-btn').addEventListener('click', function(e) {
+            e.preventDefault(); // Evitar o comportamento padrão do link
+            alert("🚀 {% trans 'Test now!' %} \n\n" +
                       "{% trans 'Here are some features you can explore:' %}\n" +
                       "- {% trans 'Switch between light and dark themes using the switcher.' %}\n" +
                       "- {% trans 'Resize the screen or test on your phone to see responsiveness.' %}\n" +
                       "- {% trans 'Check out the accessibility and adaptability of the layouts.' %}\n\n" +
                       "{% trans 'Have fun!' %}");
-            });
+        });
         document.addEventListener('DOMContentLoaded', () => {
             const switcher = document.getElementById('theme-switcher');
             const themeIcon = document.getElementById('theme-icon');
@@ -267,11 +267,11 @@
                 }
             }).then(response => response.text())
               .then(data => {
-                  feedback.textContent = {% trans 'Form submitted successfully!'%};
+                  feedback.textContent = "{% trans 'Form submitted successfully!'%}";
                   feedback.style.color = '#28a745'; // Green color for success
                   form.reset(); // Reset the form fields
               }).catch(error => {
-                  feedback.textContent = {% trans 'An error occurred while submitting the form. Please try again.'%};
+                  feedback.textContent = "{% trans 'An error occurred while submitting the form. Please try again.'%}";
                   feedback.style.color = '#dc3545'; // Red color for error
               });
         

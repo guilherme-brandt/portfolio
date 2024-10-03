@@ -91,7 +91,9 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.source-code-btn{
+    margin-top: 0.5rem;
+}
 .rounded-card {
     margin: 1rem;
     border-radius: 15px;
@@ -131,7 +133,7 @@ a {
 
 @media (max-width: 768px) {
     #myCarousel {
-        height: 45vh;
+        height: 50vh;
     }
     .hero-content {
         padding: 10px;

@@ -134,6 +134,7 @@ body.dark-mode .habilidade-icon {
 
 /* Button Styles */
 .go-live-btn {
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;

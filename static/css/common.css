@@ -133,9 +133,6 @@ a {
 }
 
 @media (max-width: 768px) {
-    #myCarousel {
-        height: 50vh;
-    }
     .hero-content {
         padding: 10px;
     }
@@ -147,8 +144,8 @@ a {
     .hero-content p {
         font-size: 1rem;
     }
-    .carousel-inner {
-        min-height: 100vh; /* Ajusta para telas pequenas */
+    #myCarousel {
+        min-height: 60vh; /* Ajusta para telas pequenas */
     }
 
     .hero-content {

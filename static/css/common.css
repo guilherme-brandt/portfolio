@@ -147,4 +147,15 @@ a {
     .hero-content p {
         font-size: 1rem;
     }
+    .carousel-inner {
+        min-height: 100vh; /* Ajusta para telas pequenas */
+    }
+
+    .hero-content {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .go-live-btn {
+        margin-top: 20px; /* Garante que o botão tenha espaço suficiente */
+    }
 }
